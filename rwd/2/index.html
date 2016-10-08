@@ -15,7 +15,7 @@
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-	
+	<link rel="stylesheet" href="dist/aos.css" />
 	<link rel="stylesheet" href="rwd2-2style.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -109,13 +109,13 @@
 
         </div><!-- /.blog-main -->
 
-        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-		  <div class="sidebar-module sidebar-module-inset">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-3 blog-sidebar">
+		  <div class="sidebar-module sidebar-module-inset" data-aos="fade-left">
             <h4>Brief about me</h4>
 			<img src="http://www.animal-photography.com/thumbs/russian_blue_cat_sitting_down_~AP-N7LMVA-TH.jpg" class="pro" width="100%">
             <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
           </div>
-          <div class="sidebar-module">
+          <div class="sidebar-module" data-aos="fade-left">
             <h4>What you wanna know about?</h4>
             <ol class="list-unstyled">
               <li><a href="#">My Kitties</a></li>
@@ -125,15 +125,13 @@
               <li><a href="#">Others</a></li>
             </ol>
           </div>
-          <div class="sidebar-module">
-            <div data-aos="fade-left">
+          <div class="sidebar-module" data-aos="fade-left">
             <h4>Follow me on:</h4>
             <ol class="list-unstyled">
               <li><a href="#">Twitter</a></li>
               <li><a href="#">Facebook</a></li>
 			  <li><a href="#">Youtube</a><li>
-            </ol>
-          </div>
+		  </ol>
         </div>
         </div><!-- /.blog-sidebar -->
 
@@ -182,12 +180,15 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
 	<script src="js/animate.js"></script>
+	  <script src="dist/aos.js"></script>
 		<script>
 	$(document).ready(function() {
 	   $(".panel").jigsaw({freq: 4000, x: 2, y:2, margin: 2});	
 	});
+	
+	AOS.init({
+	  duration: 1000
+	});
 	</script>
-	<script src="animate2.js"></script>
-  <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
   </body>
 </html>
