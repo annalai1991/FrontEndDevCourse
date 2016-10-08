@@ -1,55 +1,117 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Responsive Website sample</title>
 
-<title>Responsive website sample</title>
-<link href="bootstrap.css" rel="stylesheet">
-<link href="style.css" rel="stylesheet">
-</head>
-<body>
-<nav class="navbar navbar-default navbar-static-top">
-	<div class="container">
-	<div class="navbar-header">
-		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-		</button>
-		<div class="navbar-brand">Responsive Website Sample</div>
-	</div>
-	<div id="navbar" class="navbar-collapse collapse">
-	<ul class="nav navbar-nav navbar-right">
-		<li class="active"><a href="#">Home</a></li>
-		<li><a href="#">Content</a></li>
-		<li><a href="#">Contact us</a></li>
-	</ul>
-	</div>
-</nav>
-<section>
-<!--container with jumbotron of 1 image,3 col and passage-->
-<div class="jumbotron">
+    <!-- Bootstrap -->
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="style1.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll">
+    <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#ar">Responsive Website sample</a>
+                    <button type="button" class="btn btn-default navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="glyphicon glyphicon-list-alt"> </span></button>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="#ar">Content</a></li>
+                    <li><a href="#ft">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    <section>
+      <div class="jumbotron" id="home">
   <div class="container">
-    <img src="../flower/juhua.jpg">
+     <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+     <ol class="carousel-indicators">
+         <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+         <li data-target="#mycarousel" data-slide-to="1"></li>
+         <li data-target="#mycarousel" data-slide-to="2"></li>
+     </ol>
+     <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img class="img-responsive"
+                 src="https://w-dog.net/wallpapers/6/1/290767051536775/art-apofiss-cat-tree-landscape.jpg" width="100%">
+                
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="http://www.artsfon.com/pic/201408/1920x1080/artsfon.com-5492.jpg" width="100%">
+                
+            </div>
+            <div class="item">
+              <img class="img-responsive" src="https://w-dog.net/wallpapers/12/19/496996132509599/art-painted-landscape-mountain-cat-birds-clouds-fish.jpg" width="100%">
+            </div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+   </div>
+ </div>
   </div>
 </div>
-</section>
-<article class="container">
-	<p class="col-sm-12 col-md-6 col-lg-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
-	<p class="col-sm-12 col-md-6 col-lg-4">reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	<p class="col-sm-12 col-md-6 col-lg-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-	<div class="clearfix"></div>
-	<p class="col-sm-10 col-md-8 col-lg-6 spe"><img src="../flower/zhizi.jpg" id="ttr"><br>Excepteur sint occaecat cupidatat non proident,nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-</article>
-<footer class="footer">
-	<div class="container">
-<!--contact us with google map-->
-	<p class="text-muted">iuendbfoa</p>
-	</div>
-</footer>
+    </section class="container">
+<div class="container">
+    <article class="col-xs-12 col-sm-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</article>
+    <article class="col-xs-12 col-sm-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</article>
+    <article class="col-xs-12 col-sm-4">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</article>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="bootstrap.js"></script>
-</body>
+    <div class="clearfix "></div>
+
+    <article class="col-sm-10 col-md-8" id="ar">
+    
+    <div>
+    <img id="tp" src="https://bowwowinsurance.com.au/wp-content/uploads/2014/12/xrussian-blue.jpg.pagespeed.ic.vX49CAE9Ta.jpg" width="100%" >
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non pro</p><p>dent, sunt in At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus </p>
+    <p>id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat</p></div></article>
+
+    </div>
+   <footer id="ft">
+<div class="container">
+  <div class="row-fluid">
+        <div class="col-xs-12 col-sm-6">
+          <iframe width="100%" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&geocode=&q=15+Springfield+Way,+Hythe,+CT21+5SH&aq=t&sll=52.8382,-2.327815&sspn=8.047465,13.666992&ie=UTF8&hq=&hnear=15+Springfield+Way,+Hythe+CT21+5SH,+United+Kingdom&t=m&z=14&ll=51.077429,1.121722&output=embed"></iframe>
+          </div>
+        <div class="col-xs-12 col-sm-6">
+        <h2>Snail mail</h2>
+        <address>
+          <strong>Hythe Window Cleaning</strong><br>
+          15 Springfield Way<br>
+          Hythe<br>
+          Kent<br>
+          United Kingdon<br>
+          CT21 5SH<br>
+          <abbr title="Phone">P:</abbr> 01234 567 890
+        </address>
+      </div>
+    </div>
+</div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap.js"></script>
+  </body>
 </html>
