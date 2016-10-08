@@ -1,0 +1,73 @@
+.navbar{
+	background: #ffe6ff;  
+	color:white;
+	border-top:5px solid #9999ff;
+}
+
+.navbar-default .navbar-nav>li>a{
+	color:white;
+}
+
+.navbar-default .navbar-brand{
+	color:#9999ff;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #9999ff;
+    color:#9999ff;
+}
+
+.navbar-toggle{
+	padding: 6px 15px 4px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #9999ff;
+}
+
+.glyphicon {
+	font-size:1.3em;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #9999ff;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	color:white;
+	background:#9999ff;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #9999ff;
+    color:white;
+}
+
+body{
+	background:lightyellow;
+}
+
+.jumbotron {
+    background-color: #e6ff99;
+}
+
+article{
+	padding:50px;
+}
+
+#tp{
+	padding-bottom: 20px;
+}
+
+#ar{
+	float:none;
+	margin:0 auto;
+}
+
+footer{
+	background:#ffe6ff;
+	color:#9999ff;
+	padding-bottom: 20px;
+	padding-top:20px;
+}
