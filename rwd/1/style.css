@@ -1,0 +1,40 @@
+nav, .navbar-brand{
+	color:white;
+	font-size:1.2em;
+}
+
+.navbar{
+	margin-bottom:0;
+	border-bottom:4px solid violet;
+	background:pink;
+}
+
+.active{
+	background:yellow;
+}
+
+.jumbotron{
+	padding:0;
+}
+
+p{
+	font-size:1.5em;
+}
+
+footer{
+	background:pink;
+	border-bottom:10px solid violet;
+	margin-top:100px;
+	padding-top:100px;
+}
+
+.spe{
+	float:none;
+	margin:0 auto;
+	margin-top:50px;
+}
+
+#ttr{
+	max-width:400px;
+}
+
